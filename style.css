@@ -13,7 +13,14 @@
     justify-content: space-around;
     color: white;
     border-bottom: 1px solid rgba(128, 128, 128, 0.331);
+    position: relative;
 } 
+
+.hide {
+    position: absolute;
+    right: 20px;
+    visibility: hidden;
+}
 
 .nav-heading {
     font-size:2rem ;
@@ -68,7 +75,7 @@ ul li a {
     width: 700px;
     position: absolute;
     top: 100px;
-    left: 580px;
+    left: 625px;
     padding: 60px;
     
    
@@ -244,7 +251,8 @@ ul li a {
     font-size: 2rem;
     font-weight:800;
     color:#FFFFFF ;
-    margin-bottom: 20px;
+    padding: 60px;
+
 }
 
 .template {
@@ -370,6 +378,7 @@ iframe{
 }
 
 .footer-heading {
+    color: white;
     font-size: 3rem;
 }
 
@@ -392,4 +401,97 @@ iframe{
    bottom: 0;
    left: 510px;
    color: rgba(255, 255, 255, 0.523);
+}
+
+/* // right-side gap issu solution // */
+.navigration-bar,
+.banner-container,
+.hero-container,
+.main-content,
+#footer {
+    max-width: 100%;
+    
+}
+
+.box {
+    background-color: rgba(35, 14, 61, 1);
+    padding: 30px;
+    
+}
+
+.box h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+   padding: 60px;
+}
+.box-container{
+    width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    background-color: rgba(35, 14, 61, 1);
+    
+}
+#card-box {
+   
+    background-color: rgba(53, 17, 101, 0.4);
+    color: white;
+    padding: 30px;
+    border-radius: 15px ;
+}
+
+#card-box img {
+    margin-left: 15px;
+
+}
+
+#card-box h3 {
+    margin: 10px;
+    color: rgba(255, 255, 255, 0.922);
+
+}
+ #card-box p{
+    color: rgba(255, 255, 255, 0.667);
+    margin-left: 10px;
+    
+ }
+.box-1{
+    grid-column: span 1;
+    grid-row: span 2;
+    
+}
+.box-2{
+    grid-column: span 2;
+    grid-row: span 1;
+}
+.box-4 {
+    grid-column: span 2;
+    grid-row: span 1;
+
+}
+
+
+
+
+/* // responsive design //  */
+
+@media  screen and (max-width:576px) {
+    .navigration-bar ul , .btn{
+        visibility: hidden;
+
+    }
+
+    .navigration-bar , .hide  {
+        visibility: visible;
+        
+
+    } 
+
+    
+
+ 
+
+
 }
