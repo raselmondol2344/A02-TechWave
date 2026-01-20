@@ -5,7 +5,7 @@
 }
 
 .navigration-bar {
-    max-width: 1600px;
+    /* max-width: 1600px; */
     height: 76px;
     background-color: #1a0b2efa;
     display: flex;
@@ -472,26 +472,71 @@ iframe{
 
 }
 
+.hide{
+    display: none;
+}
 
-
+.menu-bar{
+    display: none;
+}
 
 /* // responsive design //  */
 
 @media  screen and (max-width:576px) {
-    .navigration-bar ul , .btn{
-        visibility: hidden;
+   ul {
+    display: none;
+   }
+   .btn {
+    display: none;
+   }
 
-    }
+   .menu-bar{
+    display: block;
+   }
+   .banner-container {
+    height: 400px;
+    max-width: 1100px;
+    background-image: url("assets/hero-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+   }
 
-    .navigration-bar , .hide  {
-        visibility: visible;
-        
+   .circle {
+    height:150px;
+    width: 150px;
+    background-image: url("assets/hero-circle.png");
+    background-size: cover;
+    position: relative;
+    margin-left: 15px;
+    top: 80px;
+    left: 280px;
 
-    } 
+   }
 
+   .circle-img {
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.banner-content {
+    /* border: 2px solid red; */
+    height: 530px;
+    width: 700px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 0px;
     
 
+   
  
-
-
 }
+   
+
+ 
+}
+
