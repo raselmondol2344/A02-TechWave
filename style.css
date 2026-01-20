@@ -30,7 +30,8 @@
 .txt2 {
     background: linear-gradient(to right, #F7E93F ,#FB09B4 ,#9100F8);
     color: transparent;
-    -webkit-background-clip: text;
+     -webkit-background-clip: text;
+   
     
 }
 
@@ -75,7 +76,7 @@ ul li a {
     width: 700px;
     position: absolute;
     top: 100px;
-    left: 625px;
+    left: 610px;
     padding: 60px;
     
    
