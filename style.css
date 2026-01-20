@@ -30,7 +30,7 @@
 .txt2 {
     background: linear-gradient(to right, #F7E93F ,#FB09B4 ,#9100F8);
     color: transparent;
-    
+    -webkit-background-clip: text;
     
 }
 
